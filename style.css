@@ -1,0 +1,110 @@
+html {
+    height: 100%;
+}
+
+body {
+    background: linear-gradient(45deg, rgb(77, 0, 0), rgb(187, 0, 0));
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+    width: 100%;
+    display: grid;
+    grid-template-areas:
+        "header header"
+        "content1 content2";
+    grid-template-rows: 10% 1fr;
+    grid-template-columns: 1fr 1fr;
+}
+
+
+.header {
+    grid-area: header;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 50px;
+    color: rgb(197, 188, 60);
+    text-shadow: 2px 2px rgb(0, 0, 0, 0.2);
+    font-family: "Dancing Script", cursive;
+    font-weight: 700;
+}
+
+
+.content1 {
+    grid-area: content1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.content2 {
+    grid-area: content2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.inputs {
+    background: linear-gradient(180deg, rgb(197, 188, 60), rgb(168, 129, 0), rgb(131, 111, 0));
+    height: 90%;
+    width: 60%;
+    border-radius: 50px;
+    box-shadow: 7px 7px rgb(0, 0, 0, 0.5) ;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 13px;
+
+}
+
+input,
+button {
+    height: 35px;
+    width: 350px;
+    border: none;
+    border-radius: 15px;
+    background: radial-gradient(rgb(255, 244, 198), rgb(187, 179, 147));
+    cursor: pointer;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    padding-left: 10px;
+    appearance: none
+}
+input[type="file"]::file-selector-button {
+    background-color: #fffbfa00;
+    border: none;
+    height: 100%;
+    width: 100%;
+    cursor: pointer;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+input.vazio {
+    border: solid 2px red;
+}
+button {
+    font-family: "Dancing Script", cursive;
+    font-weight: 700;
+    font-size: 20px;
+    color: rgb(80, 55, 0);
+    transition: 1s ease;
+}
+button:hover {
+    background: radial-gradient(rgb(214, 171, 0), rgb(78, 63, 0));
+    color: white;
+    box-shadow: 4px 4px rgba(0, 0, 0, 0.2);
+}
+
+label {
+    font-family: "Dancing Script", cursive;
+    font-weight: 700;
+    font-size: 20px;
+    color: rgb(187, 0, 0);
+    text-shadow: 2px 2px rgb(0, 0, 0, 0.2);
+}
+.outputs {
+    background: linear-gradient(180deg, rgb(197, 188, 60), rgb(211, 162, 0), rgb(131, 111, 0));
+    height: 90%;
+    width: 60%;
+    border-radius: 50px;
+    box-shadow: 7px 7px rgb(0, 0, 0, 0.5) ;
+}
