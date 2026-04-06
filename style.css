@@ -127,11 +127,11 @@ label {
     padding-bottom: 10% ;
 }
 
-.base_cracha {
+#base_cracha.base_cracha {
     height: 60%;
     width: 70%;
     border-radius: 1vh;
-    background: linear-gradient(180deg, rgb(255, 0, 0), rgb(255, 255, 255), rgb(255, 255, 255), rgb(255, 255, 255), rgb(255, 255, 255), rgb(21, 75, 0));
+    background: linear-gradient(180deg, rgb(114, 1, 1), rgb(255, 255, 255), rgb(255, 255, 255), rgb(255, 255, 255), rgb(255, 255, 255), rgb(160, 136, 0));
     box-shadow: 7px 7px rgba(0, 0, 0, 0.2);
     display: grid;
     grid-template-areas:
@@ -139,27 +139,59 @@ label {
         "foto_out tel_out"
         "nome_out nome_out"
         "curso_out curso_out";
-    grid-template-columns: 60% 1fr;
-    grid-template-rows: 50% 20%;
-
+    grid-template-columns: 50% 1fr;
+    grid-template-rows: 30% 30% 20% 20%;
 }
 
 #foto_out {
     grid-area: foto_out;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    text-shadow: 2px 2px rgb(0, 0, 0, 0.2);
 }
 
 #data_out {
     grid-area: data_out;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    text-shadow: 2px 2px rgb(0, 0, 0, 0.2);
 }
 
 #tel_out {
     grid-area: tel_out;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    text-shadow: 2px 2px rgb(0, 0, 0, 0.2);
 }
 
 #nome_out {
     grid-area: nome_out;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    text-shadow: 2px 2px rgb(0, 0, 0, 0.2);
 }
 
 #curso_out {
     grid-area: curso_out;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    text-shadow: 2px 2px rgb(0, 0, 0, 0.2);
+}
+
+.foto_insert {
+    border-radius: 50%;
+    box-shadow: 7px 7px rgb(0, 0, 0, 0.2);
+    height: 150px;
+    width: 150px;
+    margin-left: 20px;
 }
