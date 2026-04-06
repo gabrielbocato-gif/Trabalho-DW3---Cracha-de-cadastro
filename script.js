@@ -66,7 +66,8 @@ enviar.addEventListener("click", () => {
 if (formularioValido) {
     base_cracha.classList.add("base_cracha");
 } else {
-    base_cracha.classList.remove("base_cracha");
+    base_cracha.classList.remove("base_cracha")
+    alert("preencha todos os campos");
 }
 
     let nome_insert = document.createElement("b");
